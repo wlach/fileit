@@ -51,6 +51,7 @@ function populateAutocomplete(config) {
     list: components,
     minCharacters: 2,
     timeout: 200,
+    threshold: 200,
     adjustWidth: 360,
     template: function(item) {
       return "<li value='" + item.string + "'><span class='product'>"
