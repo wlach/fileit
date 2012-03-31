@@ -25,10 +25,10 @@ $(document).ready(function() {
   $("#file-form").submit(function(event) {
     event.preventDefault();
 
-    var [product, component] = toComponent($("#file-form .component-search").val());
+    var comp = toComponent($("#file-form .component-search").val());
     window.open("http://bugzilla.mozilla.org/enter_bug.cgi?"
-                + "product=" + encodeURIComponent(product) + "&"
-                + "component=" + encodeURIComponent(component));
+                + "product=" + encodeURIComponent(comp[0]) + "&"
+                + "component=" + encodeURIComponent(comp[1]));
   });
 });
 
