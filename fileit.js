@@ -30,6 +30,16 @@ $(document).ready(function() {
                 + "product=" + encodeURIComponent(comp[0]) + "&"
                 + "component=" + encodeURIComponent(comp[1]));
   });
+
+  // auto-focus form when user types a letter (500ms after pageload, so it's
+  // not accidentally triggered)
+  setTimeout(function() {
+    $(document).keyup(function(e) {
+      if (e.which >= 65 && e.which <= 90) {
+        $(".component-search").focus();
+      }
+    });
+  }, 500);
 });
 
 
