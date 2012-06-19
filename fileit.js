@@ -89,4 +89,5 @@ function componentName(comp) {
 
 function toComponent (name) {
   var slash = name.indexOf("/");
-  return [name.slice(0, slash), name.slice(slash + 1)];}
+  return [name.slice(0, slash), name.slice(slash + 1)];
+}
