@@ -56,7 +56,7 @@ function populateAutocomplete(config) {
     }
   }
 
-  var input = $(".component-search, .new-component");
+  var input = $(".component-search");
   input.autocomplete({
     list: components,
     minCharacters: 2,
