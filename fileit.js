@@ -26,7 +26,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var comp = toComponent($("#file-form .component-search").val());
-    window.open("http://bugzilla.mozilla.org/enter_bug.cgi?"
+    window.open("https://bugzilla.mozilla.org/enter_bug.cgi?"
                 + "product=" + encodeURIComponent(comp[0]) + "&"
                 + "component=" + encodeURIComponent(comp[1]));
   });
